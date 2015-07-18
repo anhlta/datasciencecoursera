@@ -2,13 +2,7 @@
 
 
 ## Loading and preprocessing the data
-1. Test 1
-2. Test 2
-
 1. Load the data
-```r
-d <- read.csv(file="activity.csv", header=TRUE, sep=",", stringsAsFactors = FALSE, na.strings = 'NA')
-```
 2. Convert data column to Date type: 
 ```r
 d$date <-  as.Date(d$date, format = "%Y-%m-%d")
