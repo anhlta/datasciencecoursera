@@ -8,7 +8,7 @@
 ```r
 d <- read.csv(file="activity.csv", header=TRUE, sep=",", stringsAsFactors = FALSE, na.strings = 'NA')
 ```
-2. Convert data column to Date type:
+2. Convert data column to Date type: 
 
 ```r
 d$date <-  as.Date(d$date, format = "%Y-%m-%d")
