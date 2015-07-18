@@ -2,12 +2,12 @@
 
 
 ## Loading and preprocessing the data
-1. Load the data
+- Load the data
 ```r
 d$date <-  as.Date(d$date, format = "%Y-%m-%d")
 str(d)
 ```
-2. Convert data column to Date type: 
+- Convert data column to Date type: 
 ```r
 d$date <-  as.Date(d$date, format = "%Y-%m-%d")
 str(d)
@@ -20,7 +20,7 @@ str(d)
 ```
 
 ## What is mean total number of steps taken per day?
-1. Calculate total number of steps taken each day
+- Calculate total number of steps taken each day
 
 ```r
 spd <- tapply(d$steps, d$date, sum, na.rm = TRUE)
