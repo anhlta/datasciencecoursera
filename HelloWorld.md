@@ -3,6 +3,10 @@
 
 ## Loading and preprocessing the data
 1. Load the data
+```r
+d$date <-  as.Date(d$date, format = "%Y-%m-%d")
+str(d)
+```
 2. Convert data column to Date type: 
 ```r
 d$date <-  as.Date(d$date, format = "%Y-%m-%d")
